@@ -7,11 +7,7 @@ inputs:
     description: "Who to greet"
     required: true
     default: "World"
-  JIRA_TOKEN:
-    description: "Secret de acesso a API do Jira"
-    requeired: true
-    default: "no_info"  
-
+    
 runs:
   using: "docker"
   image: "Dockerfile"
