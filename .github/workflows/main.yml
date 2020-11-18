@@ -1,11 +1,10 @@
-name: A workflow for my Hello World file
+name: My simple work
 on: push
 jobs:
-  build:
-    name: Hello world action
+  snyk:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
-        with:
-          MY_NAME: "Mona"
+    - uses: actions/checkout@v1
+    - uses: ./action-a
+    - name: Exec Script
+      run: echo $(pwd)
