@@ -7,7 +7,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: ./action-a
-        env:
-          JIRA_TOKEN:  ${{ secrets.OLA_MUNDO_TEXT }}
         with:
           MY_NAME: "Mona"
