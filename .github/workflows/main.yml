@@ -9,4 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Exec Script
+      env:
+        USUARIO: ${{ secrets.MY_JIRA_USER }}
+        TOKEN: ${{ secrets.MY_JIRA_TOKEN }}
+        URL:  ${{ secrets.MY_JIRA_URL }}
       run: sh -c "chmod +x ./alert-security.sh && ./alert-security.sh "
