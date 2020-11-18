@@ -18,5 +18,5 @@
 }
 EOF
 
-curl -D- --user ${{ secrets.MY_JIRA_USER }}:${{ secrets.MY_JIRA_TOKEN }} -X POST --data @text.json -H "Content-Type: application/json" ${{ secrets.MY_JIRA_URL }}
+curl -D- --user $USUARIO:$TOKEN -X POST --data @text.json -H "Content-Type: application/json" $URL
 rm -f text.json
