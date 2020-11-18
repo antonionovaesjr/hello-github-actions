@@ -7,10 +7,6 @@ inputs:
     description: "Who to greet"
     required: true
     default: "World"
-  JIRA_TOKEN:
-    description: "token para acesso a api do jiracloud"
-    required: true
-    default: "null"
     
 runs:
   using: "docker"
