@@ -1,9 +1,9 @@
 name: My simple work
 on: push
 jobs:
-  snyk:
+  security:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - name: Exec Script
-      run: sh -c "echo 'ola mundo'"
+      run: sh -c "echo ${{ secrets.OLA_MUNDO_TEXT }}"
