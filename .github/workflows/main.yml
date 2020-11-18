@@ -5,6 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: ./action-a
     - name: Exec Script
       run: sh -c "echo 'ola mundo'"
