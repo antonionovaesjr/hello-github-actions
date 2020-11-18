@@ -9,7 +9,7 @@
        {
           "key": "OS"
        },
-       "summary": "Report de segurança do Github no REPO de Teste",
+       "summary": "Report de segurança do Github no ${GITHUB_REPOSITORY}",
        "description": "Gituhub detectou vulnerabilidade no projeto",
        "issuetype": {
           "name": "Bug"
