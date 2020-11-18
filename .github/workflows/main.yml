@@ -9,4 +9,3 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Mona"
-          JIRA_TOKEN: ${{ secrets.OLA_MUNDO_TEXT }}
