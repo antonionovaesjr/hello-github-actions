@@ -1,4 +1,5 @@
 #!/bin/bash
+#ola
  cat <<-EOF > text.json
 {
    "fields": {
