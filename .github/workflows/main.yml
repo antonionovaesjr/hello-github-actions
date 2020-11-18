@@ -9,4 +9,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Exec Script
-      run: sh -c "echo ${{ secrets.OLA_MUNDO_TEXT }}"
+      run: sh -c "echo $GITHUB_REPOSITORY"
