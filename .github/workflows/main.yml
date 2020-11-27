@@ -2,7 +2,7 @@ name: My simple work
 on:
   push:
     branches:
-      - master
+      - masterasdasd
 jobs:
   security:
     runs-on: ubuntu-latest
